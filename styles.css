@@ -2,6 +2,7 @@ body {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,8 +26,12 @@ body {
 }
 
 .project-link {
+	position: relative;
 	display: none;
+	font-size: 2rem;
+	font-weight: 500;
 	z-index: 1;
+    top: -10rem;
 }
 
 .project img:hover {
@@ -34,12 +39,11 @@ body {
 }
 
 .project:hover {
-	.project-title{
+	.project-title, .project-link{
 		display: block;
 	}
 	background-color: white;
 	color: navy;
-
 }
 
 .project-div {
@@ -54,11 +58,11 @@ body {
 
 .name {
 font-size: 3rem;
+margin-bottom: 1rem;
 }
 
 .manuscript-gif {
 	width: -webkit-fill-available;
 	height: -webkit-fill-available;
-	/* aspect-ratio: 1/1; */
 	z-index: 0;
 }
