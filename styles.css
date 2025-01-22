@@ -1,0 +1,29 @@
+body {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+
+.project {
+	width: 15rem;
+	height: 15rem;
+	border: 5px solid black;
+	border-radius: 10px;
+	padding: 2rem;
+	text-align: center;
+	align-content: center;
+}
+
+.project:hover {
+	background-color: navy;
+	color: white;
+}
+
+.project-div {
+	display: flex;
+	/* grid-template-columns: auto auto auto; */
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 1rem;
+	justify-content: center;
+}
