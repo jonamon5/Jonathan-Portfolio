@@ -24,6 +24,12 @@ header {
 	gap: 1rem;
 	margin-bottom: 4rem;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.project-div:nth-child(odd){
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 .project {
@@ -44,6 +50,11 @@ header {
 	gap: 1rem;
 }
 
+.title-parent {
+	display: flex;
+	gap: 1rem;
+}
+
 /* IDK why it's not working */
 .gif {
 	border-radius: 1rem !important;
@@ -59,7 +70,7 @@ header {
 }
 
 @media (max-width: 700px) {
-	.project-div {
+	.project-div:nth-child(n-1) {
 		display: flex;
 		flex-direction: column;
 	}
