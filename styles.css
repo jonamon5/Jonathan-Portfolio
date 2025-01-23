@@ -1,50 +1,49 @@
 body {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin: 3%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
+	background-color: aliceblue;
+}
+
+header {
+	margin-bottom: 5rem;
+}
+
+.name {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.bio {
+	margin-bottom: 1rem;
 }
 
 .project-div {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 1rem;
-	margin: 1rem;
-	justify-content: center;
+	margin-bottom: 2rem;
 }
 
 .project {
 	height: 20rem;
 	border: 5px solid black;
 	border-radius: 10px;
-	/* padding: 2rem; */
 	text-align: center;
 	align-content: center;
-	/* object-fit: fill; */
 }
 
-
-.project img:hover {
-	opacity: 25%;
+.project-name {
+	font-size: 1.5rem;
 }
 
-.project:hover {
-	.project-title, .project-link{
-		display: block;
-	}
-	background-color: white;
-	color: navy;
+.name-desc-link {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-
-.name {
-font-size: 3rem;
-margin-bottom: 1rem;
-}
-
-.manuscript-gif {
-	width: -webkit-fill-available;
-	height: -webkit-fill-available;
-	z-index: 0;
-}
+/* IDK why it's not working */
+.project-div .manuscript-gif {
+	border-radius: 1rem !important;
+  }
