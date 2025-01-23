@@ -23,6 +23,7 @@ header {
 	flex-direction: row;
 	gap: 1rem;
 	margin-bottom: 2rem;
+	justify-content: space-between;
 }
 
 .project {
@@ -44,6 +45,15 @@ header {
 }
 
 /* IDK why it's not working */
-.project-div .manuscript-gif {
+.gif {
 	border-radius: 1rem !important;
-  }
+	/* aspect-ratio: auto; */
+	height: 50%;
+	width: 50%;
+}
+
+.blank-gif {
+	color: black;
+	visibility: hidden;
+	border: 1px solid black;
+}
