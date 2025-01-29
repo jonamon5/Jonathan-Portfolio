@@ -55,10 +55,9 @@ header {
 	gap: 1rem;
 }
 
-/* IDK why it's not working */
+/* Only works when reset css turned off */
 .gif {
-	border-radius: 1rem !important;
-	/* aspect-ratio: auto; */
+	border-radius: 1rem;
 	height: 50%;
 	width: 50%;
 }
