@@ -1,118 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Chiang | Portfolio</title>
-    <link rel="stylesheet" href="https://typography-interaction-2425.github.io/assets/reset.css" />
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-	<section class="hero">
-		<video class="hero-video" autoplay muted loop>
-		  <source src="assets/Jonathan hero section 2.mp4" type="video/mp4">
-		  Your browser does not support HTML5 video.
-		</video>
-	</section>
+    <link
+      rel="stylesheet"
+      href="https://typography-interaction-2425.github.io/assets/reset.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop>
+        <source src="assets/Jonathan hero section 2.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
 
     <section class="hero-text">
-		<p class="hero-text-1">
-			Former software engineer turned product designer, previously at <span class="chase">JPMorgan Chase &amp; Co.</span>
-		</p>
-		<p class="hero-text-2">
-			I specialize in creating unique and innovative digital solutions to everyday problems, combining my technical and design experience.
-		</p>
-		<p class="hero-text-2">
-			Currently, I am a graduate student at <span class="parsons">PARSONS SCHOOL OF DESIGN</span>, enrolled in the M.P.S of Communication Design program, graduating in May 2025.
-		</p>
-	  </section>
+      <p class="hero-text-1">
+        Former software engineer turned product designer, previously at
+        <span class="chase">JPMorgan Chase &amp; Co.</span>
+      </p>
+      <p class="hero-text-2">
+        I specialize in creating unique and innovative digital solutions to
+        everyday problems, combining my technical and design experience.
+      </p>
+      <p class="hero-text-2">
+        Currently, I am a graduate student at
+        <span class="parsons">PARSONS SCHOOL OF DESIGN</span>, enrolled in the
+        M.P.S of Communication Design program, graduating in May 2025.
+      </p>
+    </section>
 
-    <main>
-		<!-- MANUSCRIPT -->
-        <section class="project">
-            <h2>ManuScript</h2>
-            <div class="project-content">
-                <div class="project-info">
-                    <p class="project-title">The Magic of Advertising</p>
-                    <p class="project-desc">A product designer's reflection on Raymond William's The Magic of Advertising.</p>
-                    <p class="project-links">
-                        <a href="https://jonamon5.github.io/manuscript/" target="_blank">View Project</a> | 
-                        <a href="https://github.com/jonamon5/manuscript" target="_blank">GitHub</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-		<!-- SPREAD -->
-        <section class="project">
-            <h2>Spread</h2>
-            <div class="project-content">
-                <div class="project-info">
-                    <p class="project-title">Design Thinking is a rebrand for White Supremacy</p>
-                    <p class="project-desc">Two product designers' take on Darin Buzon's 2020 article.</p>
-                    <p class="project-links">
-                        <a href="https://nadabdesigns.github.io/spread/" target="_blank">View Project</a> | 
-                        <a href="https://github.com/nadabdesigns/spread" target="_blank">GitHub</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-		<!-- BINDING -->
-        <section class="project">
-            <h2>Binding</h2>
-            <div class="project-content">
-                <div class="project-info">
-                    <p class="project-title">Reimagining Design for Impact and Sustainability</p>
-                    <p class="project-desc">A collection of written pieces centered around designers' roles in shaping culture and addressing critical challenges.</p>
-                    <p class="project-links">
-                        <a href="https://jonamon5.github.io/Binding/" target="_blank">View Project</a> | 
-                        <a href="https://github.com/jonamon5/Binding" target="_blank">GitHub</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-		<!-- LINKS -->
-        <section class="project">
-            <h2>Links</h2>
-            <div class="project-content">
-                <div class="project-info">
-                    <p class="project-title">Links</p>
-                    <p class="project-desc">A curated collection of useful resources and links.</p>
-                    <p class="project-links">
-                        <a href="https://jonamon5.github.io/manuscript/" target="_blank">View Project</a> | 
-                        <a href="https://github.com/jonamon5/manuscript" target="_blank">GitHub</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-		<!-- FUNCTIONS -->
-        <section class="project">
-            <h2>Functions</h2>
-            <div class="project-content">
-                <div class="project-info">
-                    <p class="project-title">Functions</p>
-                    <p class="project-desc">A showcase of programming functions and code snippets.</p>
-                    <p class="project-links">
-                        <a href="https://jonamon5.github.io/manuscript/" target="_blank">View Project</a> | 
-                        <a href="https://github.com/jonamon5/manuscript" target="_blank">GitHub</a>
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main id="projects-grid">
+      <!-- MANUSCRIPT -->
+	  <section class="project manuscript" draggable="true">
+        <h2>ManuScript</h2>
+        <div class="project-content">
+          <div class="project-info">
+            <p class="project-title">The Magic of Advertising</p>
+            <p class="project-desc">
+              A product designer's reflection on Raymond William's The Magic of Advertising.
+            </p>
+            <p class="project-desc">Languages and Tools: HTML, CSS</p>
+            <p class="project-links">
+              <a href="https://jonamon5.github.io/manuscript/" target="_blank">View Project</a>
+              |
+              <a href="https://github.com/jonamon5/manuscript" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPREAD -->
+	  <section class="project spread" draggable="true">
+        <h2>Spread</h2>
+        <div class="project-content">
+          <div class="project-info">
+            <p class="project-title">
+              Design Thinking is a rebrand for White Supremacy
+            </p>
+            <p class="project-desc">
+              Two product designers' take on Darin Buzon's 2020 article.
+            </p>
+            <p class="project-desc">Languages and Tools: HTML, CSS</p>
+            <p class="project-links">
+              <a href="https://nadabdesigns.github.io/spread/" target="_blank">View Project</a>
+              |
+              <a href="https://github.com/nadabdesigns/spread" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BINDING -->
+	  <section class="project binding" draggable="true">
+        <h2>Binding</h2>
+        <div class="project-content">
+          <div class="project-info">
+            <p class="project-title">
+              Reimagining Design for Impact and Sustainability
+            </p>
+            <p class="project-desc">
+              A collection of written pieces centered around designers' roles in
+              shaping culture and addressing critical challenges.
+            </p>
+            <p class="project-desc">Languages and Tools: HTML, CSS</p>
+            <p class="project-links">
+              <a href="https://jonamon5.github.io/Binding/" target="_blank"
+                >View Project</a
+              >
+              |
+              <a href="https://github.com/jonamon5/Binding" target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LINKS -->
+	  <section class="project links" draggable="true">
+        <h2>Links</h2>
+        <div class="project-content">
+          <div class="project-info">
+            <p class="project-title">
+              Illusion
+            </p>
+            <p class="project-desc">A collection of images, videos, and other content focusing on illusions. Curated by Iris Chang, designed by Jonathan Chiang</p>
+            <p class="project-desc">Languages and Tools: Javascript, HTML, CSS</p>
+            <p class="project-links">
+              <a href="https://jonamon5.github.io/Links/" target="_blank">View Project</a>
+              |
+              <a href="https://github.com/jonamon5/Links" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FUNCTIONS -->
+	  <section class="project functions" draggable="true">
+        <h2>Functions</h2>
+        <div class="project-content">
+          <div class="project-info">
+            <p class="project-title">Nocta</p>
+            <p class="project-desc">
+              A website and mobile app for providing valuable insights for
+              patients with sleep apnea and on CPAP therapy
+            </p>
+            <p class="project-desc"> Languages and Tools: JavaScript, HTML, CSS, OPENAI API, SleepHQ API
+            </p>
+            <p class="project-links">
+              <a href="https://jonamon5.github.io/Functions-2/" target="_blank">View Project</a>
+			  |
+              <a href="https://github.com/jonamon5/Functions-2" target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Jonathan Chiang</p>
+      <p>&copy; 2025 Jonathan Chiang</p>
     </footer>
 
-	<script>
-		document.getElementById('scroll-down').addEventListener('click', function() {
-		  document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-		});
-	  </script>
-</body>
+	<script src="script.js"></script>
+
+  </body>
 </html>
