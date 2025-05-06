@@ -149,7 +149,39 @@ body {
 	text-align: center;
 	gap: 1.5rem;
 	overflow: hidden;
+	position: relative;
+	/* Needed for the pseudo-element positioning */
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.project:hover::after {
+	content: "Drag me";
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	font-size: 0.9rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 4px;
+	opacity: 0;
+	animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .project.dragging {
@@ -271,13 +303,19 @@ body {
 }
 
 footer {
-	text-align: center;
-	padding: 1rem;
+	position: absolute;
 	background-color: #1f1f1f;
-	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.7);
-	color: #cfcfcf;
+	width: 100%;
+	padding: 1rem 0;
+	margin: 0;
+	text-align: center;
+	left: 0;
+	padding: 2rem;
 }
 
+footer p {
+	margin-bottom: 1rem;
+}
 
 @keyframes gradientAnimation {
 	0% {
@@ -343,3 +381,52 @@ footer {
 		transform: scale(2);
 	}
 }
+
+.keyboard-showcase {
+	text-align: center;
+	padding: 2rem;
+	background: #111;
+	color: #fff;
+  }
+  
+  .keyboard {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	gap: 0.5rem;
+	width: 100%;
+	max-width: 1200px;
+	margin: 2rem auto;
+	perspective: 800px;  
+  }
+  
+  .key {
+	background: #333;
+	padding: 1rem;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+	user-select: none;
+	font-size: 1.2rem;
+	color: #fff;
+	transform: translateY(0) rotateX(0deg);
+	transform-style: preserve-3d;
+	height: 4rem;
+    width: 4rem;
+  }
+  
+
+  .key:active {
+	transform: translateY(4px) rotateX(10deg);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .key.scattered {
+	z-index: 500;
+	cursor: pointer;
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  
+  .key.scattered:active {
+	transform: translateY(4px) rotateX(10deg);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  }
